@@ -46,12 +46,10 @@ function calculaIMC() {
     var resultado = document.getElementById("resultado");
     resultado.innerHTML = "Seu IMC é " + imc;
   
-    // mostra a imagem
     var imagem = document.querySelector("#imagem-imc");
     imagem.style.display = "block";
   }
   
-  // impede que a página seja recarregada após a submissão do formulário
   var form = document.querySelector("form");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
